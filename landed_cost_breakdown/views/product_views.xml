@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_view_costing" model="ir.ui.view">
+        <field name="name">product.template.form.costing</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <!-- Cost read-only when locked in Inventory Settings -->
+            <xpath expr="//div[@name='standard_price_uom']/field[@name='standard_price']" position="attributes">
+                <attribute name="readonly">cost_locked</attribute>
+            </xpath>
+
+            <!-- Small history icon inline next to Cost -->
+            <xpath expr="//div[@name='standard_price_uom']/field[@name='standard_price']" position="after">
+                <field name="cost_locked" invisible="1"/>
+                <button name="action_show_cost_breakdown" type="object"
+                        class="btn btn-link p-0 ps-2 align-baseline text-success"
+                        style="color: #28a745;"
+                        icon="fa-history"
+                        groups="landed_cost_breakdown.group_cost_manager"
+                        title="View cost breakdown (purchase, landed, ...) - printable as PDF"
+                        aria-label="Cost Breakdown"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Variant form (easy edit): breakdown icon next to Cost -->
+    <record id="product_variant_easy_edit_view_costing" model="ir.ui.view">
+        <field name="name">product.product.variant.easy.costing</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='standard_price']" position="replace">
+                <div>
+                    <field name="standard_price" class="oe_inline" widget="monetary"
+                           readonly="cost_locked"
+                           options="{'currency_field': 'cost_currency_id', 'field_digits': True}"/>
+                    <field name="cost_locked" invisible="1"/>
+                    <button name="action_show_cost_breakdown" type="object"
+                            class="btn btn-link p-0 ps-2 align-baseline text-success"
+                            style="color: #28a745;"
+                            icon="fa-history"
+                            groups="landed_cost_breakdown.group_cost_manager"
+                            title="View cost breakdown (purchase, landed, ...) - printable as PDF"
+                            aria-label="Cost Breakdown"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

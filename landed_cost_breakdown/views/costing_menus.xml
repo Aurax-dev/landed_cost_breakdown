@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Profitability Tiers under the Accounting app's main Configuration tab -->
+    <menuitem id="menu_costing_tiers"
+              name="Profitability Tiers"
+              parent="account.menu_finance_configuration"
+              action="action_profitability_tier"
+              groups="landed_cost_breakdown.group_cost_manager"
+              sequence="100"/>
+</odoo>

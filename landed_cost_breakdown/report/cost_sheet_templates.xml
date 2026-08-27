@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_cost_sheet">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Product Cost Breakdown</h2>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-6">
+                                <strong>Product:</strong>
+                                <span t-field="doc.product_id.display_name"/><br/>
+                                <strong>Internal Ref:</strong>
+                                <span t-field="doc.product_id.default_code"/><br/>
+                                <strong>Costing Method:</strong>
+                                <span t-field="doc.cost_method"/>
+                            </div>
+                            <div class="col-6">
+                                <strong>Reference:</strong>
+                                <span t-field="doc.name"/><br/>
+                                <strong>Date:</strong>
+                                <span t-field="doc.date"/>
+                            </div>
+                        </div>
+
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th>Component</th>
+                                    <th>Description</th>
+                                    <th>Source</th>
+                                    <th class="text-end">Amount / Unit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="doc.line_ids.filtered(lambda l: not l.hidden)" t-as="line">
+                                    <td><span t-field="line.component"/></td>
+                                    <td><span t-field="line.name"/></td>
+                                    <td>
+                                        <span t-if="line.source_ref" t-field="line.source_ref.display_name"/>
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-field="line.amount"
+                                              t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="border-black">
+                                    <td colspan="3" class="text-end"><strong>Total Cost / Unit</strong></td>
+                                    <td class="text-end">
+                                        <strong>
+                                            <span t-field="doc.total_cost"
+                                                  t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/>
+                                        </strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-end">Current Product Cost</td>
+                                    <td class="text-end">
+                                        <span t-field="doc.current_standard_price"
+                                              t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        <div t-if="doc.state == 'released'" class="mt-4">
+                            <p>
+                                <strong>Released by:</strong>
+                                <span t-field="doc.released_by.name"/>
+                                on <span t-field="doc.released_on"/>
+                            </p>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

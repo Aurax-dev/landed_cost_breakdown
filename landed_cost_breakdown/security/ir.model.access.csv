@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_cost_sheet_user,product.cost.sheet.user,model_product_cost_sheet,account.group_account_invoice,1,0,0,0
+access_product_cost_sheet_manager,product.cost.sheet.manager,model_product_cost_sheet,landed_cost_breakdown.group_cost_manager,1,1,1,1
+access_product_cost_sheet_line_user,product.cost.sheet.line.user,model_product_cost_sheet_line,account.group_account_invoice,1,0,0,0
+access_product_cost_sheet_line_manager,product.cost.sheet.line.manager,model_product_cost_sheet_line,landed_cost_breakdown.group_cost_manager,1,1,1,1
+access_profitability_tier_user,product.profitability.tier.user,model_product_profitability_tier,account.group_account_invoice,1,0,0,0
+access_profitability_tier_manager,product.profitability.tier.manager,model_product_profitability_tier,landed_cost_breakdown.group_cost_manager,1,1,1,1
+access_cost_history_line_user,product.cost.history.line.user,model_product_cost_history_line,account.group_account_invoice,1,0,0,0
+access_cost_history_line_manager,product.cost.history.line.manager,model_product_cost_history_line,landed_cost_breakdown.group_cost_manager,1,1,1,1
+access_cost_current_layer_user,product.cost.current.layer.user,model_product_cost_current_layer,account.group_account_invoice,1,0,0,0
+access_cost_current_layer_manager,product.cost.current.layer.manager,model_product_cost_current_layer,landed_cost_breakdown.group_cost_manager,1,1,1,1

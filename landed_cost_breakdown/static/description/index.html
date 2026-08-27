@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: #1a1a2e; margin: 0; padding: 0; background: #fff;">
+
+<!-- HERO -->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#ede8fb" style="background-color: #ede8fb;">
+    <tr>
+        <td bgcolor="#ede8fb" style="background-color: #ede8fb; padding: 64px 48px; text-align: center; border-bottom: 5px solid #6c3fd1;">
+            <div style="display: inline-block; background: #6c3fd1; color: #fff; font-size: 0.78em; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; padding: 6px 20px; border-radius: 20px; margin-bottom: 26px;">
+                Inventory &amp; Accounting &nbsp;·&nbsp; Odoo 19
+            </div>
+            <h1 style="font-size: 2.6em; font-weight: 800; letter-spacing: -1px; margin: 0 0 20px; color: #1a0d4a; line-height: 1.15;">
+                Landed Cost <span style="color: #6c3fd1;">Breakdown</span>
+            </h1>
+            <p style="font-size: 1.1em; max-width: 640px; margin: 0 auto 36px; color: #3a2060; line-height: 1.8;">
+                Cancel a posted landed cost in one click — no mirror document, no negative landed cost. Tag every landed cost by component, and see exactly how each product's cost was built, down to the receipt it came from.
+            </p>
+            <div>
+                <span style="display: inline-block; margin: 4px; background: #fff; border: 2px solid #6c3fd1; color: #5b28c4; padding: 7px 18px; border-radius: 20px; font-size: 0.82em; font-weight: 700;">&#10022; One-Click Cancel</span>
+                <span style="display: inline-block; margin: 4px; background: #fff; border: 2px solid #6c3fd1; color: #5b28c4; padding: 7px 18px; border-radius: 20px; font-size: 0.82em; font-weight: 700;">&#10022; Cost Components</span>
+                <span style="display: inline-block; margin: 4px; background: #fff; border: 2px solid #6c3fd1; color: #5b28c4; padding: 7px 18px; border-radius: 20px; font-size: 0.82em; font-weight: 700;">&#10022; Printable Cost Sheet</span>
+                <span style="display: inline-block; margin: 4px; background: #fff; border: 2px solid #6c3fd1; color: #5b28c4; padding: 7px 18px; border-radius: 20px; font-size: 0.82em; font-weight: 700;">&#10022; Cost Lock</span>
+                <span style="display: inline-block; margin: 4px; background: #fff; border: 2px solid #6c3fd1; color: #5b28c4; padding: 7px 18px; border-radius: 20px; font-size: 0.82em; font-weight: 700;">&#10022; FIFO &amp; AVCO</span>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<!-- INTRO STRIP -->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f0eaff" style="background-color: #f0eaff;">
+    <tr>
+        <td bgcolor="#f0eaff" style="background-color: #f0eaff; padding: 34px 48px; text-align: center;">
+            <p style="font-size: 1.06em; color: #2a1060; max-width: 820px; margin: 0 auto; line-height: 1.85;">
+                Standard Odoo will not let you cancel a validated landed cost — it tells you to post a negative one instead, leaving two documents in the ledger for one mistake. <strong style="color: #6c3fd1;">Landed Cost Breakdown</strong> adds a real <strong style="color: #6c3fd1;">Cancel</strong> button that voids the landed cost in place, cancels its journal entry, and rolls the stock valuation and product cost back — then shows you, component by component, how the cost you are left with was actually built.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<!-- FEATURES -->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#faf8ff" style="background-color: #faf8ff;">
+    <tr>
+        <td bgcolor="#faf8ff" style="background-color: #faf8ff; padding: 60px 40px;">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-size: 1.85em; font-weight: 800; color: #2a1060; margin: 0 0 10px;">Everything your costing needs</h2>
+                <p style="color: #777; font-size: 0.97em; margin: 0 0 16px;">Eight capabilities on top of standard Odoo valuation — in one lightweight module.</p>
+                <div style="width: 48px; height: 4px; background-color: #6c3fd1; border-radius: 2px; margin: 0 auto;"></div>
+            </div>
+            <table style="width: 100%; max-width: 1040px; margin: 0 auto; border-collapse: separate; border-spacing: 14px;">
+                <tr>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#10060;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">Cancel a Posted Landed Cost</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">One button on the landed cost form. It cancels the journal entry that was posted, marks the document Cancelled, and re-values the receipts it was loaded onto — so the stock valuation and product cost drop straight back. No reversing entry, no mirror document.</p>
+                    </td>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#127991;&#65039;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">Landed Cost Components</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">Tag every landed cost line as Freight / Landed, Duty / Tax, Direct Labour, Direct Other or Overhead. The tag follows the cost all the way through to the product cost breakdown, so management accounting questions have a real answer.</p>
+                    </td>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#128203;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">Product Cost Sheet</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">A dated, versioned sheet per product showing purchase cost plus each landed component, per unit, reconciled against the product's actual cost. Every line links back to the purchase order or landed cost it came from.</p>
+                    </td>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#9989;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">"Did the Landed Cost Apply?"</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">A live Landed Cost / Unit figure on the product tells you how much landed cost has actually been posted to it. The question every buyer asks after a shipment, answered without opening a single valuation report.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#128200;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">Cost History per Receipt</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">One row per past receipt — date, document, quantity, base cost, landed cost and the resulting batch cost per unit. Filter by this month, last quarter, this year or a custom range to see how a product's cost moved.</p>
+                    </td>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#129518;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">How the Cost Is Calculated</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">A tab that lists the units still in stock layer by layer, each layer's unit cost and value, so the weighted average that makes up the current cost is laid out in front of you rather than inferred.</p>
+                    </td>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#128274;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">Cost Lock &amp; Controlled Release</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">Switch on Lock Product Cost and the Cost field goes read-only for everyone. A Cost Manager releases a cost sheet to write its total back to the product — logged with who released it and when.</p>
+                    </td>
+                    <td style="width: 25%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 26px 22px; border: 1px solid #d8c8f8;">
+                        <div style="font-size: 1.8em; margin-bottom: 14px;">&#128424;&#65039;</div>
+                        <h3 style="font-size: 0.95em; font-weight: 700; color: #5b28c4; margin: 0 0 10px;">Accountant-Ready PDF</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">Print any cost sheet as a QWeb PDF — the full component breakdown, the total, the product's current cost and the variance between them. Hand it to your accountant or file it with the month-end pack.</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- SCREENSHOTS -->
+<section style="padding: 60px 40px; background-color: #fff;">
+    <div style="text-align: center; margin-bottom: 48px;">
+        <h2 style="font-size: 1.85em; font-weight: 800; color: #2a1060; margin: 0 0 10px;">See it in action</h2>
+        <p style="color: #777; font-size: 0.97em; margin: 0 0 16px;">From tagging a landed cost to cancelling one and printing the cost sheet.</p>
+        <div style="width: 48px; height: 4px; background-color: #6c3fd1; border-radius: 2px; margin: 0 auto;"></div>
+    </div>
+    <div style="max-width: 920px; margin: 0 auto;">
+        <img src="screenshot_01.png" alt="Product form with the locked Cost field and its release button" style="width: 100%; display: block; border-radius: 10px; border: 1px solid #ede8fb; margin-bottom: 20px;"/>
+        <img src="screenshot_02.png" alt="Product Cost Sheet: purchase and landed components with source documents" style="width: 100%; display: block; border-radius: 10px; border: 1px solid #ede8fb; margin-bottom: 20px;"/>
+        <img src="screenshot_03.png" alt="The printed Product Cost Breakdown PDF" style="width: 100%; display: block; border-radius: 10px; border: 1px solid #ede8fb; margin-bottom: 20px;"/>
+        <img src="screenshot_04.png" alt="Cancel button on a posted landed cost, with the Cost Component column" style="width: 100%; display: block; border-radius: 10px; border: 1px solid #ede8fb; margin-bottom: 0;"/>
+    </div>
+</section>
+
+<!-- WHAT IT TRACKS -->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#faf8ff" style="background-color: #faf8ff;">
+    <tr>
+        <td bgcolor="#faf8ff" style="background-color: #faf8ff; padding: 60px 40px;">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-size: 1.85em; font-weight: 800; color: #2a1060; margin: 0 0 10px;">Everything it gives you at a glance</h2>
+                <p style="color: #777; font-size: 0.97em; margin: 0 0 16px;">Built on standard Odoo valuation — nothing is recalculated behind your back.</p>
+                <div style="width: 48px; height: 4px; background-color: #6c3fd1; border-radius: 2px; margin: 0 auto;"></div>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Cancel button on posted landed costs</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Journal entry cancelled, not reversed</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Cancelled ribbon on the form</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Blocked when the entry is reconciled</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Cost component on every landed cost line</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Freight / Landed</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Duty / Tax</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Direct Labour</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Direct Other</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Overhead</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Cost sheet per product, per company</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Draft / Released states</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Amount per unit on every component line</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Source link to the PO or landed cost</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Hide a line from the sheet</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Total cost vs current cost variance</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Cost history — this month to custom range</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Base cost / landed cost / batch cost per receipt</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Remaining stock layers with unit cost</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Landed Cost Added &amp; Landed Cost / Unit</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Lock Product Cost setting</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Release to Update Cost, logged</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Cost Manager access group</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Configurable profitability tiers</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">QWeb PDF cost sheet report</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Standard, FIFO and Average costing</span>
+                <span style="display: inline-block; margin: 5px; background-color: #6c3fd1; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 0.88em; font-weight: 500;">Multi-company aware</span>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<!-- HOW TO USE -->
+<section style="padding: 60px 40px; background-color: #fff;">
+    <div style="text-align: center; margin-bottom: 48px;">
+        <h2 style="font-size: 1.85em; font-weight: 800; color: #2a1060; margin: 0 0 10px;">Up and running in minutes</h2>
+        <p style="color: #777; font-size: 0.97em; margin: 0 0 16px;">No configuration project — install it and your existing landed costs already make sense.</p>
+        <div style="width: 48px; height: 4px; background-color: #6c3fd1; border-radius: 2px; margin: 0 auto;"></div>
+    </div>
+    <table style="max-width: 680px; margin: 0 auto; border-collapse: collapse; width: 100%;">
+        <tr>
+            <td style="width: 52px; padding: 0 20px 30px 0; vertical-align: top;">
+                <div style="width: 42px; height: 42px; background-color: #6c3fd1; color: #fff; border-radius: 50%; text-align: center; line-height: 42px; font-weight: 800; font-size: 1em;">1</div>
+            </td>
+            <td style="padding-bottom: 30px; vertical-align: top;">
+                <strong style="font-size: 1em; color: #2a1060; display: block; margin-bottom: 5px;">Install and pick your Cost Managers</strong>
+                <p style="color: #555; font-size: 0.92em; line-height: 1.7; margin: 0;">Grant the Cost Manager group to whoever is allowed to release a cost back to a product. Everyone else can read cost sheets without changing anything.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 52px; padding: 0 20px 30px 0; vertical-align: top;">
+                <div style="width: 42px; height: 42px; background-color: #6c3fd1; color: #fff; border-radius: 50%; text-align: center; line-height: 42px; font-weight: 800; font-size: 1em;">2</div>
+            </td>
+            <td style="padding-bottom: 30px; vertical-align: top;">
+                <strong style="font-size: 1em; color: #2a1060; display: block; margin-bottom: 5px;">Tag your landed cost lines</strong>
+                <p style="color: #555; font-size: 0.92em; line-height: 1.7; margin: 0;">On any landed cost, set the Cost Component on each line — Freight, Duty, Labour, Other or Overhead. Validate as usual; nothing about standard behaviour changes.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 52px; padding: 0 20px 30px 0; vertical-align: top;">
+                <div style="width: 42px; height: 42px; background-color: #6c3fd1; color: #fff; border-radius: 50%; text-align: center; line-height: 42px; font-weight: 800; font-size: 1em;">3</div>
+            </td>
+            <td style="padding-bottom: 30px; vertical-align: top;">
+                <strong style="font-size: 1em; color: #2a1060; display: block; margin-bottom: 5px;">Got one wrong? Press Cancel</strong>
+                <p style="color: #555; font-size: 0.92em; line-height: 1.7; margin: 0;">Open the posted landed cost and click Cancel. The journal entry is cancelled, the document is stamped Cancelled, and the receipts it touched are re-valued — the product cost goes back to what it was.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 52px; padding: 0 20px 30px 0; vertical-align: top;">
+                <div style="width: 42px; height: 42px; background-color: #6c3fd1; color: #fff; border-radius: 50%; text-align: center; line-height: 42px; font-weight: 800; font-size: 1em;">4</div>
+            </td>
+            <td style="padding-bottom: 30px; vertical-align: top;">
+                <strong style="font-size: 1em; color: #2a1060; display: block; margin-bottom: 5px;">Open the Cost Breakdown on a product</strong>
+                <p style="color: #555; font-size: 0.92em; line-height: 1.7; margin: 0;">Build a cost sheet and read the composition: purchase cost plus each landed component per unit, with the variance against the product's current cost.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 52px; padding: 0 20px 30px 0; vertical-align: top;">
+                <div style="width: 42px; height: 42px; background-color: #6c3fd1; color: #fff; border-radius: 50%; text-align: center; line-height: 42px; font-weight: 800; font-size: 1em;">5</div>
+            </td>
+            <td style="padding-bottom: 30px; vertical-align: top;">
+                <strong style="font-size: 1em; color: #2a1060; display: block; margin-bottom: 5px;">Lock the cost field</strong>
+                <p style="color: #555; font-size: 0.92em; line-height: 1.7; margin: 0;">Turn on Lock Product Cost in Settings so nobody types over a costed product by hand. Changes then only happen through a released cost sheet.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 52px; padding: 0 20px 0 0; vertical-align: top;">
+                <div style="width: 42px; height: 42px; background-color: #6c3fd1; color: #fff; border-radius: 50%; text-align: center; line-height: 42px; font-weight: 800; font-size: 1em;">6</div>
+            </td>
+            <td style="vertical-align: top;">
+                <strong style="font-size: 1em; color: #2a1060; display: block; margin-bottom: 5px;">Print it for the accountant</strong>
+                <p style="color: #555; font-size: 0.92em; line-height: 1.7; margin: 0;">Hit Print PDF on the cost sheet for a clean breakdown document — ready for month-end, an audit query, or a pricing discussion.</p>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-- SUPPORT -->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f0eaff" style="background-color: #f0eaff;">
+    <tr>
+        <td bgcolor="#f0eaff" style="background-color: #f0eaff; padding: 60px 40px;">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-size: 1.85em; font-weight: 800; color: #2a1060; margin: 0 0 10px;">Support &amp; Contact</h2>
+                <p style="color: #5b28c4; font-size: 0.97em; margin: 0 0 16px;">We're here to help — before and after your purchase.</p>
+                <div style="width: 48px; height: 4px; background-color: #6c3fd1; border-radius: 2px; margin: 0 auto;"></div>
+            </div>
+            <table style="width: 100%; max-width: 900px; margin: 0 auto; border-collapse: separate; border-spacing: 16px;">
+                <tr>
+                    <td style="width: 33%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 28px 24px; border: 2px solid #c4a8f5; text-align: center;">
+                        <div style="font-size: 1.8em; margin-bottom: 12px;">&#128231;</div>
+                        <h3 style="font-size: 1em; font-weight: 700; color: #2a1060; margin: 0 0 10px;">Email Support</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0 0 14px;">Have a question, found a bug, or need help with configuration? Send us an email and we'll get back to you promptly.</p>
+                        <a href="mailto:support.aurax@gmail.com" style="display: inline-block; background-color: #6c3fd1; color: #fff; padding: 10px 24px; border-radius: 20px; font-size: 0.88em; font-weight: 600; text-decoration: none;">support.aurax@gmail.com</a>
+                    </td>
+                    <td style="width: 33%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 28px 24px; border: 2px solid #c4a8f5; text-align: center;">
+                        <div style="font-size: 1.8em; margin-bottom: 12px;">&#9889;</div>
+                        <h3 style="font-size: 1em; font-weight: 700; color: #2a1060; margin: 0 0 10px;">Fast Response</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">We aim to respond to all support requests within <strong style="color: #6c3fd1;">24 hours</strong> on business days. For urgent issues, mention it in your subject line.</p>
+                    </td>
+                    <td style="width: 33%; vertical-align: top; background-color: #fff; border-radius: 14px; padding: 28px 24px; border: 2px solid #c4a8f5; text-align: center;">
+                        <div style="font-size: 1.8em; margin-bottom: 12px;">&#128295;</div>
+                        <h3 style="font-size: 1em; font-weight: 700; color: #2a1060; margin: 0 0 10px;">What We Can Help With</h3>
+                        <p style="font-size: 0.88em; color: #555; line-height: 1.7; margin: 0;">Installation issues &nbsp;&#183;&nbsp; Configuration guidance &nbsp;&#183;&nbsp; Bug reports &nbsp;&#183;&nbsp; Feature requests &nbsp;&#183;&nbsp; Compatibility questions</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- TECH DETAILS -->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#2a1060" style="background-color: #2a1060;">
+    <tr>
+        <td bgcolor="#2a1060" style="background-color: #2a1060; padding: 60px 40px; text-align: center;">
+            <div style="margin-bottom: 44px;">
+                <h2 style="font-size: 1.85em; font-weight: 800; color: #e8d5ff; margin: 0 0 10px;">Technical details</h2>
+                <p style="color: #c4a8f5; font-size: 0.97em; margin: 0 0 16px;">Clean, lightweight integration with no external dependencies.</p>
+                <div style="width: 48px; height: 4px; background-color: #9b6bf5; border-radius: 2px; margin: 0 auto;"></div>
+            </div>
+            <table style="margin: 0 auto; border-collapse: separate; border-spacing: 14px;">
+                <tr>
+                    <td bgcolor="#3d1f80" style="background-color: #3d1f80; border: 1px solid #6c3fd1; border-radius: 14px; padding: 24px 32px; text-align: center; min-width: 140px;">
+                        <div style="font-size: 1.8em; margin-bottom: 8px;">&#128193;</div>
+                        <div style="font-size: 0.8em; color: #c4a8f5; margin-bottom: 5px;">Odoo Version</div>
+                        <div style="font-weight: 700; font-size: 1em; color: #fff;">19.0</div>
+                    </td>
+                    <td bgcolor="#3d1f80" style="background-color: #3d1f80; border: 1px solid #6c3fd1; border-radius: 14px; padding: 24px 32px; text-align: center; min-width: 140px;">
+                        <div style="font-size: 1.8em; margin-bottom: 8px;">&#128279;</div>
+                        <div style="font-size: 0.8em; color: #c4a8f5; margin-bottom: 5px;">Dependencies</div>
+                        <div style="font-weight: 700; font-size: 1em; color: #fff;">stock_account &nbsp;&#183;&nbsp; stock_landed_costs &nbsp;&#183;&nbsp; purchase &nbsp;&#183;&nbsp; account</div>
+                    </td>
+                    <td bgcolor="#3d1f80" style="background-color: #3d1f80; border: 1px solid #6c3fd1; border-radius: 14px; padding: 24px 32px; text-align: center; min-width: 140px;">
+                        <div style="font-size: 1.8em; margin-bottom: 8px;">&#127970;</div>
+                        <div style="font-size: 0.8em; color: #c4a8f5; margin-bottom: 5px;">Edition</div>
+                        <div style="font-weight: 700; font-size: 1em; color: #fff;">Community &amp; Enterprise</div>
+                    </td>
+                    <td bgcolor="#3d1f80" style="background-color: #3d1f80; border: 1px solid #6c3fd1; border-radius: 14px; padding: 24px 32px; text-align: center; min-width: 140px;">
+                        <div style="font-size: 1.8em; margin-bottom: 8px;">&#9878;&#65039;</div>
+                        <div style="font-size: 0.8em; color: #c4a8f5; margin-bottom: 5px;">License</div>
+                        <div style="font-weight: 700; font-size: 1em; color: #fff;">LGPL-3</div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- FOOTER -->
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a0d4a" style="background-color: #1a0d4a;">
+    <tr>
+        <td bgcolor="#1a0d4a" style="background-color: #1a0d4a; padding: 28px 40px; text-align: center;">
+            <p style="color: #a080d8; font-size: 0.87em; margin: 0;">
+                Developed by <a href="https://aurax.dev" style="color: #c8aaff; font-weight: 700; text-decoration: none;">Aurax.dev</a> by <strong style="color: #c8aaff;">Aurax (Pvt) Ltd</strong> &nbsp;&#183;&nbsp; Support: <strong style="color: #c8aaff;">support.aurax@gmail.com</strong>
+            </p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

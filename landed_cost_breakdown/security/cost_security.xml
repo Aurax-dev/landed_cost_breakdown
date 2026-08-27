@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_cost_manager" model="res.groups">
+        <field name="name">Cost Manager</field>
+        <field name="privilege_id" ref="account.res_groups_privilege_accounting"/>
+        <field name="comment">Management accountants who can build cost breakdowns and release product cost updates.</field>
+        <field name="implied_ids" eval="[(4, ref('account.group_account_invoice'))]"/>
+    </record>
+
+    <!-- Settings administrators automatically get Cost Manager rights -->
+    <record id="base.group_system" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('landed_cost_breakdown.group_cost_manager'))]"/>
+    </record>
+</odoo>

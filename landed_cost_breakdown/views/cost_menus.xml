@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- The raw "Cost Sheets" list menu was removed as unnecessary.
+         Cost breakdowns are accessed via the green icon on products and the
+         Costing ▸ Product Costing tab. -->
+</odoo>

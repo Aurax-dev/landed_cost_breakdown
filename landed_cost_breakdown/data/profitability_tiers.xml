@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Default, editable profitability tiers (by margin %). -->
+    <record id="tier_loss" model="product.profitability.tier">
+        <field name="name">Loss</field>
+        <field name="min_margin">-1000000</field>
+        <field name="decoration">danger</field>
+    </record>
+    <record id="tier_danger" model="product.profitability.tier">
+        <field name="name">Danger Zone</field>
+        <field name="min_margin">0</field>
+        <field name="decoration">warning</field>
+    </record>
+    <record id="tier_healthy" model="product.profitability.tier">
+        <field name="name">Healthy</field>
+        <field name="min_margin">20</field>
+        <field name="decoration">info</field>
+    </record>
+    <record id="tier_profitable" model="product.profitability.tier">
+        <field name="name">Profitable</field>
+        <field name="min_margin">50</field>
+        <field name="decoration">success</field>
+    </record>
+</odoo>
