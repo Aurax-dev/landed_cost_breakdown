@@ -1,8 +1,9 @@
 Landed Cost Breakdown
 =====================
 
-Cancel a posted landed cost without a reversing entry, tag landed costs by
-component, and see exactly how each product's cost was built.
+See what every product cost is made of: purchase price plus freight, duty,
+labour and overhead, tagged per landed cost line and traceable to its source
+document. Wrong landed cost? Cancel it without a reversing entry.
 
 Installation
 ------------
@@ -30,26 +31,6 @@ cost sheet.
 **Profitability tiers.** Margin bands live under
 **Accounting → Configuration → Profitability Tiers**. Each tier has a label,
 a minimum margin and a colour.
-
-Cancelling a Landed Cost
-------------------------
-
-Standard Odoo refuses to cancel a validated landed cost and tells you to post
-a negative one instead. This module adds a **Cancel** button to posted landed
-costs (Inventory Managers only), which instead:
-
-1. Resets the journal entry the landed cost posted and cancels it — no
-   reversing entry is created.
-2. Sets the landed cost to *Cancelled* and stamps a red ribbon on the form.
-3. Re-values the receipts the cost was loaded onto, so the stock valuation
-   and the product cost drop back to what they were.
-
-Odoo 19 only counts valuation adjustment lines belonging to landed costs in
-state *Posted*, so a cancelled cost also disappears from the cost sheet, the
-cost history and the *Landed Cost / Unit* indicator.
-
-The button refuses to run when the journal entry has reconciled lines —
-unreconcile them first. Odoo's own lock-date and hash checks still apply.
 
 Cost Components
 ---------------
@@ -81,6 +62,26 @@ tabs:
   layer's unit cost and value.
 
 Press **Print PDF** for a QWeb report of the breakdown.
+
+Cancelling a Landed Cost
+------------------------
+
+Standard Odoo refuses to cancel a validated landed cost and tells you to post
+a negative one instead. This module adds a **Cancel** button to posted landed
+costs (Inventory Managers only), which instead:
+
+1. Resets the journal entry the landed cost posted and cancels it — no
+   reversing entry is created.
+2. Sets the landed cost to *Cancelled* and stamps a red ribbon on the form.
+3. Re-values the receipts the cost was loaded onto, so the stock valuation
+   and the product cost drop back to what they were.
+
+Odoo 19 only counts valuation adjustment lines belonging to landed costs in
+state *Posted*, so a cancelled cost also disappears from the cost sheet, the
+cost history and the *Landed Cost / Unit* indicator.
+
+The button refuses to run when the journal entry has reconciled lines —
+unreconcile them first. Odoo's own lock-date and hash checks still apply.
 
 Releasing a Cost
 ----------------
